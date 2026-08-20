@@ -34,6 +34,7 @@ Al inspeccionar el ensamblado GrandLarcenyAuto.dll con un descompilador de .NET,
 
 El flujo simplificado de dicho método es el siguiente:
 
+```
 public string TryOpen() 
 {
     // 1. Validación del nivel de búsqueda
@@ -49,6 +50,7 @@ public string TryOpen()
     byte[] plain = CryptoUtil.Xor(SealedBlob, key);
     return "VAULT UNSEALED\n" + Encoding.UTF8.GetString(plain);
 }
+```
 
 3. El por qué  de la vulnerabilidad
 
