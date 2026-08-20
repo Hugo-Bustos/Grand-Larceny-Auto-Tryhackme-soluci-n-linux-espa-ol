@@ -12,7 +12,7 @@ Resumen del desafío
     Objetivo: Abrir la bóveda del refugio (safehouse vault) | CTF
 
 
-1. Inspección Inicial de Archivos
+### 1. Inspección Inicial de Archivos
 
 Al descargar y extraer el archivo comprimido del reto (GrandLarcenyAuto.zip), encontramos la estructura típica de un proyecto compilado con el motor Godot:
 
@@ -28,7 +28,7 @@ Insight Técnico:
 
 La presencia de GodotSharp.dll junto a GrandLarcenyAuto.dll nos indica que el motor utiliza el runtime de .NET (C#) en lugar de scripts interpretados en GDScript. Toda la lógica del jugador, reglas de negocio y mecánicas de la bóveda residen en GrandLarcenyAuto.dll.
 
-2. Análisis Técnico: El Logic Flaw
+### 2. Análisis Técnico: El Logic Flaw
 
 Al inspeccionar el ensamblado GrandLarcenyAuto.dll con un descompilador de .NET, la atención se centra en la clase SafehouseVault y su método TryOpen().
 
@@ -52,7 +52,7 @@ public string TryOpen()
 }
 ```
 
-3. El por qué  de la vulnerabilidad
+### 3. El por qué  de la vulnerabilidad
 
 Existe una desalineación entre la validación de entrada y la generación de la clave criptográfica:
 
@@ -68,7 +68,7 @@ El contenido de la bóveda (SealedBlob) fue cifrado originalmente con la clave d
 
     Con EXACTAMENTE 6 estrellas (WantedStars = 6): Cumple la condición y deriva la clave correcta que revela la bandera.
 
-4. Explotación en Linux
+### 4. Explotación en Linux
 
 Para resolver el desafío en Linux sin emuladores (como Wine), utilizamos el SDK de .NET (en caso que no tengas el comando de instalación en debian/ubuntu es: sudo apt update && sudo apt install -y dotnet-sdk-8.0) para cargar la DLL del juego en memoria y forzar la variable del jugador.
 
@@ -128,7 +128,7 @@ dotnet run
 Paso 4: Lectura de la flag. 
 THM{h0tf1x3d_my_0wn_w4nt3d_l3v3l}
 
-5. Conclusiones:
+### 5. Conclusiones:
 Este desafío es un gran ejemplo de cómo los errores de lógica de negocio pueden comprometer una aplicación aunque se utilicen algoritmos de cifrado seguros. Asimismo, demuestra la flexibilidad del ecosistema .NET en Linux, permitiendo auditar y manipular ensamblados compilados para Windows sin depender del sistema operativo original. A nivel personal encontré interesante el reto porque me permitió extender mi conocimiento del reverse engineering del cual todavía estoy aprendiendo, éxito a todos en sus proyectos y/o desafíos.
 
 ```
