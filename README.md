@@ -129,9 +129,11 @@ THM{h0tf1x3d_my_0wn_w4nt3d_l3v3l}
 5. Conclusiones:
 Este desafío es un gran ejemplo de cómo los errores de lógica de negocio pueden comprometer una aplicación aunque se utilicen algoritmos de cifrado seguros. Asimismo, demuestra la flexibilidad del ecosistema .NET en Linux, permitiendo auditar y manipular ensamblados compilados para Windows sin depender del sistema operativo original. A nivel personal encontré interesante el reto porque me permitió extender mi conocimiento del reverse engineering del cual todavía estoy aprendiendo, éxito a todos en sus proyectos y/o desafíos.
 
-|\_/|
-       ( . .)
-        =w= (\
-       / ^  \//
-      (||  ||)
-     ,"""_"""_.
+```
+ |\_/|    
+ (. .)
+  =w= (\  
+ / ^ \//  
+(|| ||)
+,""_""_ .
+```
