@@ -1,7 +1,7 @@
 # Grand-Larceny-Auto-Tryhackme-soluci-n-linux-espa-ol
 Este repositorio contiene el análisis técnico y la resolución paso a paso para la sala "Grand Larceny Auto" en TryHackMe.
 
-A diferencia del enfoque convencional que sugiere utilizar un entorno Windows para ejecutar el juego, esta solución se aborda de forma 100% nativa desde Linux realizando análisis estático sobre el código compilado e interactuando con él mediante Reflection.
+A diferencia del enfoque convencional que sugiere utilizar un entorno Windows para ejecutar el juego, esta solución se aborda desde Linux realizando análisis estático sobre el código compilado e interactuando con él mediante Reflection.
 
 Resumen del desafío
 
