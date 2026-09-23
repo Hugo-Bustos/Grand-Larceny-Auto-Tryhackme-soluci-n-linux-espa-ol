@@ -1,4 +1,11 @@
 # Grand-Larceny-Auto-Tryhackme-soluci-n-linux-espa-ol
+
+![TryHackMe](https://img.shields.io/badge/TryHackMe-Room-Red?style=for-the-badge)
+![Reverse Engineering](https://img.shields.io/badge/Reverse_Engineering-Purple?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![.NET SDK](https://img.shields.io/badge/.NET_8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+
 Este repositorio contiene el análisis técnico y la resolución paso a paso para la sala "Grand Larceny Auto" en TryHackMe.
 
 A diferencia del enfoque convencional que sugiere utilizar un entorno Windows para ejecutar el juego, esta solución se aborda desde Linux realizando análisis estático sobre el código compilado e interactuando con él mediante Reflection.
